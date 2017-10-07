@@ -9,8 +9,15 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background-size: cover;
+  opacity: 0.9;
+  background-image: url('images/banner.jpg');
+
+
+
+
 }
+
 /* Link Styles */
 
 a {
@@ -30,6 +37,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  opacity: 0.9;
 }
 .nav {
   display: flex;
@@ -52,13 +60,11 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: skyblue;
 }
 
 header {
   text-align: center;
-  background: url('images/banner.jpg') no-repeat top center;
-  background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
@@ -72,13 +78,17 @@ header .profile-image {
   width: 125px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid red;
+  border: 3px solid blue;
   transition: all .5s;
+
+
 }
 
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(360deg);
+
 }
+
 .tag {
   background-color: skyblue;
   color: black;
@@ -86,10 +96,19 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
+  opacity: 0.8;
+}
+
+h1 {
+  text-shadow: 20px 20px 20px rgba(0,0,0,.8);
+
 }
 .location {
   background-color: white;
   color: black;
+  opacity: .8;
+
+
 }
 .card {
   margin: 30px;
@@ -98,11 +117,19 @@ header .profile-image:hover {
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+  border-radius: 35%;
   transition: all .5s;
+  opacity: 0.80;
 }
+
+
 .card:hover {
-  border-color: #ff99ff;
+  border-color: black;
+}
+
+h2 {
+    text-shadow: 20px 20px 20px rgba(0,0,0,.8);
+
 }
 
 ul.goals {
@@ -113,18 +140,30 @@ ul.goals {
 .goals li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: black;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .goals li:nth-child(odd) {
-  background: #0399ff;
+  background: black;
 }
 
 .treehousetext {
   color: blue;
+
+}
+
+.bloglink {
+    color: blue;
+    text-decoration: underline;
+    text-shadow: 5px 5px 20px rgb(0,0,255);
+
+}
+
+.experience {
+    text-align: left;
 
 }
 
@@ -137,6 +176,7 @@ footer {
 footer .copyright {
   top: -8px;
   font-size: .75em;
+  color: white;
 }
 
 footer ul {
@@ -156,28 +196,31 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
   transition: all .5s;
+
 }
+
 a.twitter {
   background-image: url(images/twitter.svg);
 }
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
+
 a.github {
   background-image: url(images/github.svg);
 }
-a.facebook {
-  background-image:
 
-}
+
 a.social:hover {
   opacity: 1;
 }
+
 .clearfix {
   clear: both;
 }
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
@@ -218,4 +261,9 @@ a.social:hover {
 .card {
   text-align: center;
 
+}
+
+a.toplink {
+  color: white;
+  text-decoration: underline;
 }
