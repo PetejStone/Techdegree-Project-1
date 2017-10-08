@@ -12,7 +12,7 @@ body {
   background-size: cover;
   opacity: 0.9;
   background-image: url('images/banner.jpg');
-
+  font-family: sans-serif;
 
 
 
@@ -26,6 +26,8 @@ a {
 }
 a:hover {
   color: #6633ff;
+
+
 }
 
 /* Section Styles */
@@ -58,9 +60,12 @@ a:hover {
 }
 .nav a {
   transition: all .5s;
+  display: inline-block;
 }
 .nav a:hover {
   color: skyblue;
+  transform: scale(1.2);
+
 }
 
 header {
@@ -102,6 +107,7 @@ header .profile-image:hover {
 h1 {
   text-shadow: 20px 20px 20px rgba(0,0,0,.8);
 
+
 }
 .location {
   background-color: white;
@@ -129,6 +135,7 @@ h1 {
 
 h2 {
     text-shadow: 20px 20px 20px rgba(0,0,0,.8);
+
 
 }
 
@@ -159,8 +166,18 @@ ul.goals {
     color: blue;
     text-decoration: underline;
     text-shadow: 5px 5px 20px rgb(0,0,255);
+    display: inline-block;
 
 }
+
+.bloglink:hover {
+    color: red;
+    transform: scale(1.2);
+
+
+}
+
+
 
 .experience {
     text-align: left;
@@ -215,6 +232,8 @@ a.github {
 
 a.social:hover {
   opacity: 1;
+  transform: scale(1.5);
+
 }
 
 .clearfix {
@@ -266,4 +285,6 @@ a.social:hover {
 a.toplink {
   color: white;
   text-decoration: underline;
+
+ }
 }
