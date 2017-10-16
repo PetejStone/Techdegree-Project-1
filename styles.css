@@ -13,9 +13,6 @@ body {
   opacity: 0.9;
   background-image: url('images/banner.jpg');
   font-family: sans-serif;
-
-
-
 }
 
 /* Link Styles */
@@ -120,12 +117,13 @@ h1 {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  text-align: left;
+  text-align: center;
   background: #fff;
   border-bottom: 4px solid #ccc;
-  border-radius: 35%;
+  border-radius: 100px 5px;
   transition: all .5s;
   opacity: 0.80;
+  box-shadow: inset 2px 2px 2px 2px black;
 }
 
 
@@ -151,10 +149,6 @@ ul.goals {
   color: white;
   padding: 5px 10px;
   margin: 2px;
-}
-
-.goals li:nth-child(odd) {
-  background: black;
 }
 
 .treehousetext {
